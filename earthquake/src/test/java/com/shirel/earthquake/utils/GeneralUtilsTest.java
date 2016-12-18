@@ -18,14 +18,6 @@ public class GeneralUtilsTest {
     }
 
     @Test
-    public void testGetCountryNameWithoutComma() throws Exception {
-        String countryName = "abc name2";
-        String actual = GeneralUtils.getCountryName(countryName);
-        String expected = "name2";
-        assertEquals(actual, expected);
-    }
-
-    @Test
     public void testGetCountryNameMoreThanOneComma() throws Exception {
         String countryName = "abc, ceg, name3";
         String actual = GeneralUtils.getCountryName(countryName);
